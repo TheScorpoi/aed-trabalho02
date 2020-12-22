@@ -1,0 +1,49 @@
+TODAS OS ALGORITMOS DE ORDENAÇÃO
+
+data_file="output.txt"
+set title "Best Time - All Algorithms"
+set logscale xy
+set grid
+set key left
+set format xy "%.0e"
+plot data_file i 0 u 1:2 w linespoints pt 7 title 'Bubble Sort' ,\
+data_file i 1 u 1:2 w linespoints pt 7 title 'Shaker Sort' ,\
+data_file i 2 u 1:2 w linespoints pt 7 title 'Insertion Sort' ,\
+data_file i 3 u 1:2 w linespoints pt 7 title 'Shell Sort' ,\
+data_file i 4 u 1:2 w linespoints pt 7 title 'Quick Sort' ,\
+data_file i 5 u 1:2 w linespoints pt 7 title 'Merge Sort' ,\
+data_file i 6 u 1:2 w linespoints pt 7 title 'Heap Sort' ,\
+data_file i 7 u 1:2 w linespoints pt 7 title 'Rank Sort' ,\
+data_file i 8 u 1:2 w linespoints pt 7 title 'Selection Sort' 
+
+
+
+COM DESVIO PADRAO
+
+data_file="output.txt"
+set title "Selection Sort"
+set ylabel "Time (s)"
+set xlabel "n"
+set logscale xy
+set grid
+set key left
+set format xy "%.0e"
+plot data_file i 8 u 1:2 w linespoints pt 7 title 'Best'	,\
+data_file i 8 u 1:3 w linespoints pt 7 title 'Worst' ,\
+data_file i 8 u 1:4 w linespoints pt 7 title 'Average' ,\
+data_file i 8 u 1:5 w linespoints pt 7 title 'Std Dev' 
+ 
+
+SEM DESVIO PADRAO
+
+data_file="output.txt"
+set title "Selection Sort"
+set ylabel "Time (s)"
+set xlabel "n"
+set logscale xy
+set grid
+set key left
+set format xy "%.0e"
+plot data_file i 8 u 1:2 w linespoints pt 7 title 'Best'	,\
+data_file i 8 u 1:3 w linespoints pt 7 title 'Worst' ,\
+data_file i 8 u 1:4 w linespoints pt 7 title 'Average'
