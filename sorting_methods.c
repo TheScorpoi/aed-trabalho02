@@ -92,14 +92,14 @@ int main(int argc,char *argv[argc])
           (*functions[k].function)(data,first,one_after_last);
           if(data[first] < (T)(0) || (first > 0 && data[first - 1] != (T)(-1)) || (one_after_last < n && data[one_after_last] != (T)(-1)))
           {
-            fprintf(stderr,"%s() failed for n=%d, first=%d, and one_after_last=%d (access error) --- 😒\n",functions[k].name,n,first,one_after_last);
+            fprintf(stderr,"%s() failed for n=%d, first=%d, and one_after_last=%d (access error) --- :)\n",functions[k].name,n,first,one_after_last);
             exit(1);
           }
           for(i = first + 1;i < one_after_last;i++)
             if(data[i] < data[i - 1])
             {
               show(data,first,one_after_last);
-              fprintf(stderr,"%s() failed for n=%d, first=%d, and one_after_last=%d (sort error for i=%d) --- 😒\n",functions[k].name,n,first,one_after_last,i);
+              fprintf(stderr,"%s() failed for n=%d, first=%d, and one_after_last=%d (sort error for i=%d) --- :(\n",functions[k].name,n,first,one_after_last,i);
               exit(1);
             }
         }
@@ -112,7 +112,7 @@ int main(int argc,char *argv[argc])
     //
     // done
     //
-    printf("No errors found --- 😀\n");
+    printf("No errors found --- :)\n");
     return 0;
 # undef MAX_N
 # undef N_TESTS
