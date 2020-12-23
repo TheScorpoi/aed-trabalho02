@@ -10,8 +10,6 @@ Para compilar os programas, é vital ter um Compilador de C instalado na máquin
 O projeto foi desenvolvido com recurso ao IDE VSCode, e com recurso ao Matlab e ao gnuplot para criar os gráficos dos tempos de execução. 
 
 ### Compilar
-Para compilar e correr o programa, e guardar os resultados num ficheiro .txt, executamos o seguinte
-código no terminal:
 Para compilar o programa, usamos o *makefile* da seguinte maneira:
 ```
 make sorting_methods
