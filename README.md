@@ -20,7 +20,7 @@ O programa está capacitado com um teste, onde são testadas todas as rotinas de
 ./sorting_methods -test
 ```
 
-Para correr o programa, e guardar os resultados dos tempos de execução das rotinas de ordenação,num 
+Para correr o programa, e guardar os resultados dos tempos de execução das rotinas de ordenação, num 
 ficheiro .txt, executamos o seguinte código:
 ```
 ./sorting_methods -measure | tee output.txt
