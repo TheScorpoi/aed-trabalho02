@@ -1,1 +1,27 @@
-baibi baibi do laibi do birulaibi laibi
+!! IR VER AO ALGORITHMS que tenho no UBUNTO, que estratégias estas rotina usam e quais é q dá para comparar melhor!!
+
+
+3.4 Shell Sort (parte explicar gráfico)
+
+Estando os no gráfico os tempos numa escala logaritima, podemos concluir que os mesmos crescem de forma exponencial, salvo a parte inicial onde isso não se verifica assim tao bem, porém
+à medida que o n cresce, a o crescimento exponencial vai se retratando cada vez mais.
+
+
+Como dito no início da introdução a esta estratégia de ordenação, o Shell Sort, passa por ser uma sucessiva aplicação do Insertion Sort. Sendo assim, a proxima figura (Fig.XX),
+apresenta a comparação entre as duas estratégias de ordenação.
+!!!!FAZER O GRÁFICO COM ESTAS DUAS!!!!
+!Tirar as conclusoes dessa gráfico!
+
+3.5 Quick Sort (parte explicar gráfico)
+
+???? Esta rotina de ordenação apresenta-nos valores de n até um milhão, ou seja, consegue ser mais eficiente temporalmente que certas rotinas onde o n so alcança valores de cem mil?????
+
+Esta rotina, como se pode observar no gráfico, apresenta um crescimento temporal exponencial, crescimento esse que no início apresenta algumas divergências, porém à medida que o n
+aumenta a reta torna-se mais linear, e também é notótio realçar que as diferenças de tempos de execução entre Best, Worst, e Average tornam-se muito pequenas.
+
+
+3.6 Merge Sort (parte explicar gráfico)
+
+A estratégia de ordenação, Merge Sort, apresenta no seu todo um cresciemnto exponencial, tal como nos outros algortimos no início e mais linear que exponencial, no entanto à medida
+que o n aumenta o grau de exponencialidade acompanha esse aumento de forma cada vez mais acente. É visivel que, por análise do gráfico, o Worst Case, tem algumas oscilações, para valores
+de n pequenos, e algumas para valores de n mais elevados... Tentar explicar o pq disso
