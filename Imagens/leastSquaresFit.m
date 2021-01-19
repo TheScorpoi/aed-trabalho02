@@ -1,8 +1,6 @@
-clear all
-close all
-clc 
+clear all; close all; clc 
 
-load avg_time.txt
+avg_time = load('n_and_average_time.txt');
 
 idx = find(avg_time(:,1) == 10);
 sizeAvg = size(avg_time);
