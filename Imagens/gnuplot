@@ -47,3 +47,17 @@ set format xy "%.0e"
 plot data_file i 8 u 1:2 w linespoints pt 7 title 'Best'	,\
 data_file i 8 u 1:3 w linespoints pt 7 title 'Worst' ,\
 data_file i 8 u 1:4 w linespoints pt 7 title 'Average'
+
+
+COMPARAÇAO DE 2 ROTINAS
+
+data_file="output.txt"
+set title "Comparação Quick Sort - Merge Sort"
+set ylabel "Time (s)"
+set xlabel "n"
+set logscale xy
+set grid
+set key left
+set format xy "%.0e"
+plot data_file i 5 u 1:4 w linespoints pt 7 title 'Quick Sort'	,\
+data_file i 6 u 1:4 w linespoints pt 7 title 'Merge Sort'
